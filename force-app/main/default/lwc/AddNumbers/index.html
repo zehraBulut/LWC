@@ -1,0 +1,24 @@
+<template>
+
+    <lightning-card  title="TOPLAMA">
+        <lightning-input
+             type="number"  
+             name="input1" 
+             label="SAYI 1"
+             value="0"
+             onblur={handleNum1}
+        ></lightning-input>
+     <br>
+        <lightning-input
+           type="number"
+           name="input2" 
+           label="SAYI 2"
+           value="0"
+           onblur={handleNum2}
+     ></lightning-input>
+   
+     <p> sayi 1= {sayi1} ile  sayi 2 = {sayi2} toplami === {toplam} </p>
+    <br>
+    </lightning-card>
+ 
+</template>
