@@ -1,5 +1,4 @@
 import { LightningElement } from 'lwc';
-import { LightningElement } from 'lwc';
 export default class breakExample extends LightningElement {
         loopOutput = '';
         handleLoop() {
@@ -11,5 +10,3 @@ export default class breakExample extends LightningElement {
     }
        }
     }
-
-export default class E7break extends LightningElement {}

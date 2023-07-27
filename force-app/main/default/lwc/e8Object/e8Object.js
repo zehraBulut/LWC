@@ -1,5 +1,4 @@
 import { LightningElement } from 'lwc';
-import { LightningElement } from 'lwc';
 export default class breakExample extends LightningElement {   
     person = {
         name: 'John Smith',
@@ -7,5 +6,3 @@ export default class breakExample extends LightningElement {
         email: 'john.smith@example.com'
       };
 }
-
-export default class E8Object extends LightningElement {}
