@@ -5,7 +5,6 @@ export default class A05ListIteration extends LightningElement {
 
 sehirListesi = ['Kayseri','Maras','Istanbul','Izmir','Balikesir'];
 
-//****************************************
 
 cicekListesi = [
     {
@@ -33,8 +32,5 @@ cicekListesi = [
         imgUrl:'http://www.leblebitozu.com/wp-content/uploads/2017/02/sumbul.jpg'
     }
     ]
-
-
-
 
 }
