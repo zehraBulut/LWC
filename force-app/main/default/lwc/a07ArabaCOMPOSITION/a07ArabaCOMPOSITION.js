@@ -1,6 +1,5 @@
 import { LightningElement } from 'lwc';
 export default class A07ArabaCOMPOSITION extends LightningElement {
-   
  
 
     value1 = '';
@@ -18,13 +17,6 @@ export default class A07ArabaCOMPOSITION extends LightningElement {
     }
 
    
-
-
-
-
-
-
-
     value2 = '';
     get motorCinsi() {
         return [
@@ -52,7 +44,6 @@ export default class A07ArabaCOMPOSITION extends LightningElement {
     handleMotorHacmi(event) {
         this.value3 = event.detail.value;
     }
-
 
 
 
