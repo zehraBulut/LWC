@@ -1,0 +1,118 @@
+<template>
+
+
+    
+    <lightning-card title=" Component Composition">
+      
+        <h1>ARABALAR</h1>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+         
+                <lightning-combobox 
+                name="progress"
+                label="Araba Cesitleri"
+                value={value1}
+                placeholder="Araba modeli secin"
+                options={arabalar}
+                onchange={handleAraba}
+                
+            ></lightning-combobox>
+            </div>
+            <div class="slds-col">
+             
+            <p>Selected value is: {value1}</p>
+            </div>
+          </div>
+
+
+
+
+         
+
+
+
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+               
+            <lightning-combobox 
+            name="progress"
+            label="Motor Cinsi Secenekleri"
+            value={value2}
+            placeholder="Motor Cinsi Secin"
+            options={motorCinsi}
+            onchange={handleMotorCinsi}
+            
+            
+        ></lightning-combobox>
+                </div>
+                <div class="slds-col">
+                    <p>Selected value is: {value2}</p>
+                </div>
+              </div>
+
+
+
+            
+              <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-combobox
+                    name="progress"
+                    label="Motor Hacmi Cesitleri"
+                    value={value3}
+                    placeholder="Motor Hacmi Secin"
+                    options={motorHacmi}
+                    onchange={handleMotorHacmi}
+                    
+                ></lightning-combobox>
+                </div>
+                <div class="slds-col">
+                    <p>Selected value is: {value3}</p>
+                </div>
+              </div>
+            
+            
+
+              <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-combobox
+                    name="progress"
+                    label="Motor Gucu Cesitleri"
+                    value={value4}
+                    placeholder="Motor Gucu Secin"
+                    options={motorGucu}
+                    onchange={handleMotorGucu}
+                
+                ></lightning-combobox>
+                </div>
+                <div class="slds-col">
+                    <p>Selected value is: {value4}</p>
+                </div>
+              </div>
+            
+            
+            
+              <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-combobox 
+                    name="progress"
+                    label="Yakit Turu Cesitleri"
+                    value={value5}
+                    placeholder="Yakit Turu modeli secin"
+                    options={yakitTuru}
+                    onchange={handleYakitTuru}
+                    
+                ></lightning-combobox>
+              
+                </div>
+                <div class="slds-col">
+                    <p>Selected value is: {value5}</p>
+                </div>
+              </div>
+   
+
+    </lightning-card>
+
+    </template>
+    
