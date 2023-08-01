@@ -1,5 +1,4 @@
 import { LightningElement, api , track} from 'lwc';
-
 export default class A09trackDecoratorObject extends LightningElement {
 
    @api ad='Destina'
@@ -10,6 +9,7 @@ export default class A09trackDecoratorObject extends LightningElement {
 
     }
 
+    
     @api soyad='Ozgur'
 
     handleSoyIsim(event){
