@@ -8,6 +8,7 @@ export default class A03Component extends LightningElement {
     ad='Sukufe'
     handleIsim(event){
     this.ad=event.target.value
+    console.log('RENDER EDILDI')
     }
 
 
