@@ -24,7 +24,6 @@ handleAccount(event){
  
 
 
-
 //filtre ıle liste getırmek 2.yontem
   filtreIki= 'xxxxxxx'
 

@@ -41,10 +41,5 @@ public static  List<Account> accountFiltreImperative(String accIsim){
     }
 }
 
-//button ıle record olusturma
-
-
-
-
 
 }

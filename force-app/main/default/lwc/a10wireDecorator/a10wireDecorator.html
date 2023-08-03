@@ -3,8 +3,6 @@
 <lightning-card title="@wire decorator">
 <!--listeyi ekranda gormek ıcın foreach kulan,armuttakı datadan gelcek-->
    <!--   acc = objenctın tamanmını ıfade edyr-->
- 
- 
    <!--basit lıste getir-->
    <template for:each={armut.data} for:item="acc">
    <p key={acc.Id} > ID -->  {acc.Id}   NAME --> {acc.Name} </p>
@@ -12,6 +10,8 @@
 </lightning-card>
 
 <br><p>---------------------------</p>
+
+
 
 <lightning-card title="wire ile filtre">
     <!--filtre ile LİSTE getirmek(input kulanarak)  1.yontem-->
@@ -21,7 +21,6 @@ type="text"
 label="Account Getir"
 onchange={handleAccount}>
 </lightning-input>
-
 
 
 <template for:each={filtreIleAccountListesi.data} for:item="acc">
@@ -44,7 +43,6 @@ onchange={handleAccountIki}>
 </lightning-input>
 
 
-
 <template for:each={dataListesi} for:item="acc">
 <p key={acc.Id} > ID -->  {acc.Id}   NAME --> {acc.Name} </p>
  </template>
@@ -52,6 +50,7 @@ onchange={handleAccountIki}>
 </lightning-card>
 
 <br><p>-----------------------------</p>
+
 
 <lightning-card title="Imperative yontem">
 <!--Imperative yontem ile liste getirme-->
