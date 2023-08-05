@@ -7,11 +7,13 @@ export default class A16eventBubbling extends LightningElement {
 
     handleInnerDiv(){
    this.innerDiv++
-    }
+    } 
+
     handleMiddleDiv(event){
     this.middleDiv++
     event.stopPropagation()
     }
+    
     handleOuterDiv(){
     this.outerDiv++
 
