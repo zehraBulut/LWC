@@ -11,12 +11,15 @@ export default class A18customEventParent extends LightningElement {
   handleArmut(event){
    this.yeniBilgiPrimitive=event.detail
   }
+
   //customer event OBJECT gonderme
     customer={
         name:'',
         age:''
     }
+
     handleAyva(event){
      this.customer=event.detail
   }
+
 }
