@@ -1,31 +1,31 @@
-import { LightningElement } from 'lwc';
-import accOlustur from '@salesforce/apex/LWCileAccountOlustur.accountOlustur'
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+ import { LightningElement } from 'lwc';
+ import accOlustur from '@salesforce/apex/AccountOlusturLwcile.accountOlustur';
+ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 
-export default class A10AccountOlustur extends LightningElement {
+ export default class A10AccountOlustur extends LightningElement {
 
-accountName
+ accountName
 
-handleAccountName(event){
-this.accountName = event.target.value
-}
+ handleAccountName(event){
+ this.accountName = event.target.value
+ }
 
+ //Lwc Toast message
+   handleClick(){
+   accOlustur({accName:this.accountName})
 
-handleClick(){
-accOlustur({accName:this.accountName})
-
-.then((response) => { 
+    .then((response) => { 
     if(response === 'MALADETS' ){
  
- this.dispatchEvent( new ShowToastEvent({
-   title: 'TEBRIKLER MASALLAH SIZE!',
+   this.dispatchEvent( new ShowToastEvent({
+   title: 'TEBRIKLER!',
    message: 'Tebrikler bir adet accout olusturdunuz',
-   variant: 'success'
+   variant: 'success',
 
  }))
 
-    }else if (response == 'malesef' ){
+    }else if (response == 'IZVINI' ){
        this.dispatchEvent( new ShowToastEvent({
            title: 'Warning!',
            message: 'sory',
@@ -35,11 +35,11 @@ accOlustur({accName:this.accountName})
     }
 
     } )
-.catch((error)=>{console.log('Error olustu')})
+ .catch((error)=>{console.log('Error olustu')})
 
 
-}
+ }
 
 
 
-}
+ }
