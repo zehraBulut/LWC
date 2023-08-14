@@ -14,11 +14,14 @@ return this.sayi1 + this.sayi2
 isimler=['ayse','fatma','resul','ali']
 secilenIsim= this.isimler[0]
 
+
+
 //get ile array olustur(bu code ılede aynı sonucu alrsn)
 isimler=['ayse','fatma','resul','ali']
 get secilenIsimGet(){
 return this.secilenIsim
 }
+
 
 //input ile isim ekranda gosterıcem
 girilenIndex =0

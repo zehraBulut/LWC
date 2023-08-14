@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
-export default class breakExample extends LightningElement {   
-  firstName = '';
+export default class E10getters extends LightningElement {
+    
+    firstName = '';
     lastName = '';
 
     firstNameHandler(event){
