@@ -15,7 +15,7 @@ public static  List<Account> accountFiltre(String accIsim){
 
     try {
  string acc = '%'+accIsim+'%';
- string sorgu = 'SELECT Id,name FROM account WHERE name LIKE acc '; 
+ string sorgu = 'SELECT d,name FROM account WHERE name LIKE acc '; 
  return Database.query(sorgu);
   
 

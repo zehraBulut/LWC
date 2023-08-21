@@ -23,12 +23,12 @@
 
         <template for:each={cicekListesi} for:item="cicek">    
         <ol key={cicek.id}> 
-          
+            <li> CICEK ADI -> {cicek.id}</li>
            <li> CICEK ADI -->{cicek.name}</li>
            <li> CICEK Familya-->{cicek.familya}</li>
            <br>
-
        </ol> 
        </template>
+       
     </lightning-card>
 </template>
